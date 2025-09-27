@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sigab and ivan</title>
+  <style>
+    /* --- Gaya Umum --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #8B0000;
+      color: #333;
+    }
+
+    header {
+      background: #00BFFF;
+      padding: 20px;
+      text-align: center;
+      color: white;
+    }
+
+    /* --- Galeri Gambar --- */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .card {
+      overflow: hidden;
+      border-radius: 10px;
+      background: white;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* --- Pemutar Musik --- */
+    .music-player {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #222;
+      padding: 15px;
+    }
+
+    .music-player audio {
+      width: 90%;
+      max-width: 400px;
+      outline: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #4CAF50;
+      color: black;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Judul Website -->
+  <header>
+    <h1>🤭😹</h1>
+    <p>we don't talk anymore loh ya cik🤭😹</p>
+  </header>
+
+  <!-- Pemutar Musik -->
+  <div class="music-player">
+    <audio id="bgMusic" controls loop>
+      <source src="DJ WE DON'T TALK ANYMORE XPUTZ RMX REVERB FAJAR PRESET.mp3" type="audio/mpeg">
+      Browser kamu tidak mendukung audio.
+    </audio>
+  </div>
+
+  <!-- Galeri Gambar -->
+  <main class="gallery">
+    <!-- Ganti link src sesuai gambar kamu -->
+    <div class="card">
+      <img src="IMG-20250916-WA0074.jpg" alt="Image 1">
+    </div>
+    <div class="card">
+      <img src="IMG-20250816-WA0064.jpg" alt="Image 2">
+    </div>
+    <div class="card">
+      
+  </main>
+
+  <footer>
+    <p>DUO NONCHALANT AND COOL</p>
+  </footer>
+
+  <script>
+    // Alert saat klik gambar
+    document.querySelectorAll('.card img').forEach(img => {
+      img.addEventListener('click', () => {
+        alert('balabak si ivan: ${img.alt}`);
+      });
+    });
+  </script>
+
+</body>
+</html>
